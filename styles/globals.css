@@ -1,16 +1,16 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+
+:root {
+  font-size: 18px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@media only screen and (max-width: 420px) {
+  :root {
+    font-size: 16px;
+  }
 }
 
-* {
-  box-sizing: border-box;
-}
+/* purgecss end ignore */
+@tailwind utilities;
