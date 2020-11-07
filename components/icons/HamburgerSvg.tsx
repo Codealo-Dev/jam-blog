@@ -9,7 +9,7 @@ interface Props {
 const HamburgerSvg: React.FC<Props> = (props) => {
   return (
     <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" className={props.className}>
-      <path stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M1.5 1.5h15M1.5 9.5h15M1.5 16.5h15" />
+      <path strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" d="M1.5 1.5h15M1.5 9.5h15M1.5 16.5h15" />
     </svg>
   )
 }

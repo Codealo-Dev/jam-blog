@@ -6,7 +6,7 @@ import DefaultLayout from '../../layouts/DefaultLayout';
 import Prismic from 'prismic-javascript';
 
 interface Props {
-  posts: any[]
+  posts: IPost[]
 }
 
 const Index: React.FC<Props> = ({ posts }) => {
@@ -25,8 +25,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
       Prismic.Predicates.at('document.type', 'blog_posts'),
       { orderings: '[my.blog_post.date desc]' }
     )
-
-    console.log('Response from prismis', response);
     return {
       props: {
         posts: response.results
